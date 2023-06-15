@@ -1,0 +1,16 @@
+<h1>enlazado de datos</h1>
+<h4>ingresa un nombre</h4>
+<input type="text" [(ngModel)]="nombre" >
+<h4>ingresa un apellido</h4>
+<input type="text" [(ngModel)]="apellido" >
+
+<h4> hola {{nombre}} {{apellido}} </h4>
+
+<mat-form-field appearance="fill">
+    <mat-label>Snack bar duration (seconds)</mat-label>
+    <input type="number" [(ngModel)]="durationInSeconds" matInput>
+  </mat-form-field>
+  
+  <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    Pizza party
+  </button>
